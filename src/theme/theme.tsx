@@ -14,7 +14,6 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: 'Montserrat, sans-serif',
     h1: {
-      color: '#ffd710',
       fontWeight: 'normal',
       fontSize: '30px'
     },
