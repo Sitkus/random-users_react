@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   avatar: {
     border: '5px solid white',
-    height: '100%',
-    width: '120px',
+    height: '100% !important',
+    width: '120px !important',
     transform: 'translateY(-50%)',
-    marginBottom: '-50px'
+    marginBottom: '-60px'
   },
   cardActions: {
     marginBottom: '20px'

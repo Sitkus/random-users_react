@@ -24,6 +24,10 @@ const theme = createMuiTheme({
     h3: {
       fontWeight: 'normal',
       fontSize: '21px'
+    },
+    h4: {
+      fontWeight: 'normal',
+      fontSize: '16px'
     }
   }
 });

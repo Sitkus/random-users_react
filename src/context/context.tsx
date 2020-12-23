@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, createContext } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 
 type UserProviderProps = { 
   children: React.ReactNode;
@@ -17,18 +17,6 @@ const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
   const [ user, setUser ] = useState([]);
   const [ url, setUrl ] = useState('https://randomuser.me/api/');
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const response = await fetch(url);
-      const result = await response.json();
-
-      console.log(result.results);
-      
-    };
-
-    fetchUsers();
-  }, [url]);
-
   return (
     <UserContext.Provider value={{ user, setUser, url, setUrl }}>
       { children }
@@ -36,6 +24,9 @@ const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
   )
 }
 
+/**
+ * useContext already prepared for use in other files
+ */
 const useUser = () => {
   return useContext(UserContext);
 }

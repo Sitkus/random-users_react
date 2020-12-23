@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from './components';
+import Box from './components/Box';
 import useStyles from './App.style';
 import { Paper } from '@material-ui/core/';
 import './css/style.css';
